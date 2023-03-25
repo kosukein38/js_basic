@@ -70,7 +70,7 @@ while (count < 10) {
 
 let tomatoCount = 100;
 do {
-  console.log('do-while: ', tomatoCount);
+  // console.log('do-while: ', tomatoCount);
   tomatoCount += 1;
 } while (tomatoCount < 10);
 
@@ -84,9 +84,44 @@ for (
 
 const fruits = ['apple', 'banana', 'grape', 'ogange', 'mango'];
 for (let i = 0; i < fruits.length; i += 1) {
-  console.log(fruits[i]);
+  // console.log(fruits[i]);
 }
 
 for (const fruit of fruits) {
-  console.log(fruit);
+  // console.log(fruit);
 }
+
+const coffee = {
+  name: 'Caffe Latte',
+  size: 350,
+  isHot: true,
+};
+
+coffeeCondition: if (true) {
+  for (const key in coffee) {
+    if (key === 'size') {
+      // console.log('break');
+      break coffeeCondition;
+    }
+    // console.log(key);
+    // console.log(coffee[key]);
+  }
+  // console.log('inside an if statement');
+}
+
+const coffeeCondition = 'coffee';
+
+function logChocolate() {
+  try {
+    console.log('try');
+    throw 'error';
+  } catch {
+    console.log('catch');
+  }
+  //  finally {
+  //   console.log('finally');
+  //   return 'hello'
+  // }
+}
+
+logChocolate();
