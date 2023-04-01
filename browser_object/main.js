@@ -1,20 +1,23 @@
-window.alert('アラートです');
+// window.alert('アラートです');
 
-const result = confirm('本当に削除してよいですか??');
-if (result) {
-  console.log('削除しました');
-} else {
-  console.log('キャンセルしました');
-}
+// const result = confirm('本当に削除してよいですか??');
+// if (result) {
+//   console.log('削除しました');
+// } else {
+//   console.log('キャンセルしました');
+// }
 
-function delayTask() {
-  console.log('1秒ごとに繰り返し実行される');
-}
+// function delayTask() {
+//   console.log('1秒ごとに繰り返し実行される');
+// }
 
-const timerId = setTimeout(delayTask, 5000);
-clearTimeout(timerId);
+// const timerId = setTimeout(delayTask, 5000);
+// clearTimeout(timerId);
 
-const timerId = setInterval(delayTask, 1000);
-clearInterval(timerId);
+// const timerId = setInterval(delayTask, 1000);
+// clearInterval(timerId);
 
-const newWindow = open();
+// const newWindow = open();
+
+location.reload();
+location.href = 'https://google.co.jp';
